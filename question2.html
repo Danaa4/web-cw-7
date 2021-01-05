@@ -17,6 +17,17 @@
          لكل سائق object <= arrayحط داخل ال
          حط اسم السائق وعمره object داخل كل
       */
+       
+
+       let drivers =[
+
+         {name:'ahmad',age:26},
+         {name:'salem',age:17},
+         {name:'abdulla',age:30},
+         {name:'omar',age:17},
+
+          ] 
+
 
       // 2
       /* licenseTest() اسمها function قم بتعريف
@@ -24,6 +35,24 @@
          اطبع "تفضل/ي رخصتك يا ..." <= لو عمر السائق 18 أو أكثر
                           اطبع "نعتذر منك، المرة الياية إن شاء الله" <= لو أصغر
       */
+      function licenseTest(name){
+       for (let index = 0; index < drivers.length; index++) {
+         const element = drivers[index];
+         
+         if(element.age>=18){
+           console.log(`تفضل/ي رخصتك يا ${element.name}`)
+         }
+         else{
+          console.log(` ${element.name}نعتذر منك، المرة الياية إن شاء الله`)
+         };
+
+       }
+     }
+       
+      licenseTest()
+      
+      
+
 
       // onclick انتبه إنه إحنا مو قاعدين نستخدم زر يعني ما نقدر نستخدم
     </script>

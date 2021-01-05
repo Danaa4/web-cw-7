@@ -18,13 +18,33 @@
         اللي إنت اتابعها Animeتحتوي على مسلسلات ال myAnime المصفوفة الأولى
         اللي رفيجك يتابعها Animeتحتوي على مسلسلات ال myFriendAnime المصفوفة الثانية
       */
+     let myAnime =[
+       `sally`,`conan`,`naruto`,
+     ]
+
+     let myFriendAnime =[
+       `naruto`,`dragon ball`,`conan`,
+     ]
 
       // 2
       // mutualAnime عرف مصفوفة فاضية سمها
+      let mutualAnime=[];
 
+      
       // mutualAnimeقارن المصفوفتين وضيف المسلسلات المشتركة ل
 
-      // consoleفي ال mutualAnime اطبع
+      for (let i = 0; i < myAnime.length; i++) {
+        for (let j = 0; j < myFriendAnime.length; j++) {
+         if (myAnime[i] == myFriendAnime[j]) { 
+           mutualAnime.push(myAnime[i]);
+      }
+    }
+  }
+
+      
+     // consoleفي ال mutualAnime اطبع
+       
+     console.log(mutualAnime)
 
       // ودك تشوف اللستة المشتركة بينكم على الموقع؟
       // 🏃🏻‍♂️ ادخل على صفحة الموقع في المتصفح
